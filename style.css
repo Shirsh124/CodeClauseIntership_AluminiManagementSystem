@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+}
+header {
+    background: url("C:\Users\99raj\OneDrive\Desktop\assets\bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.head {
+    display: flex;
+    justify-content: space-around;
+}
+header input[type=text] {
+    border-radius: 0px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #c6c6c6;
+    color: #c6c6c6;
+    line-height: 15px;
+    padding: 5px 16px;
+}
+header h1 {
+    font-weight: 400;
+    color: #3b3b3b;
+}
+header button {
+    color: white;
+    background-color: black;
+    border-radius: 0px;
+    padding: 5px 16px;
+    line-height: 15px;
+    border: none;
+}
+.btn:hover {
+    color: white;
+    background-color: #FF5454;
+}
+.heading .back{
+    background: #3b3b3b;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 75px; 
+}
+.heading nav .active {
+    background-color: #FF5454;
+}
+.heading nav {
+    padding: 0px;
+}
+.heading .back nav .nav-link{
+    color: white;
+    border: 1px solid black;
+    padding: 20px 30px;
+    font-size: 13px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.back nav .nav-link:hover{
+    color: white;
+    background-color: #FF5454;
+}
+.links ul {
+    margin-bottom: 0px;
+    display: flex;
+}
+.links ul li {
+    list-style: none;
+    display: inline-flex;
+    margin: 0px;
+}
+.links ul li a{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 0px;
+    padding: 10px 15px;
+    margin: auto;
+    border: 1px solid black;
+}
+.links a:hover{
+    background: #FF5454;
+    color: white;
+}
+.main {
+    background: url('assets/slider_bg.jpg');
+    background-size: 100%;
+}
+#slider, .main ul {
+	height: 200px;
+}
+#slider {
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+	margin-top: 85px;
+    margin-bottom: 85px;
+	position: relative;
+	width: 600px;
+}
+
+#slider li
+{
+	position: relative;
+	width: 600px;
+	display: inline-block;
+	height: 200px;
+}
+
+#slider ul
+{
+	list-style: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 9000px;
+	transition: left .2s linear;
+	-moz-transition: left .2s linear;
+	-o-transition: left .2s linear;
+	-webkit-transition: left .2s linear;
+	margin-left: -25px;
+    font-family: open sans;
+    color: white;
+}
+.slider-container {
+    color: white;
+	margin: 0 auto;
+	padding: 0;
+	width: 550px;
+    min-height: 180px;
+    text-align:center;
+}
+
+.slider-container h2 {
+ 	color: #fff;
+     text-transform: uppercase;
+}
+.slider-container  p {
+	margin: 0px;
+	font-weight: semi-bold;
+	line-height: 150%;
+}
+.slider-container .btn {
+    border: 2px solid #FF5454;
+}
+.slider-container .btn:hover{
+    background-color: #FF5454;
+    background-size: 500px 10px;
+    color: white;
+}
+.intro {
+    background: url('assets/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+.intro .btn {
+    border: 2px solid #FF5454;
+}
+.intro .btn:hover{
+    background-color: #FF5454;
+    background-size: 500px 10px;
+    color: white;
+}
+.intro i {
+    font-size: 3rem;
+    text-shadow: 1px 1px 0px #3b3b3b;
+}
+.intro a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #353535;
+    font-size: 1.8rem;
+    display: inline-block;
+}
+.intro a:hover{
+    color: #FF5454;
+}
+.intro p{
+    font-size: 14px;
+    line-height: 1.8em;
+    color: #868686;
+}
+.intro .first,.scnd,.third,.frth{
+    margin-bottom: 4%;
+    padding-bottom: 2rem;
+}
+.img .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.img {
+    font-size: large;
+}
+.img h4{
+    font-weight: 400;
+    font-family: 'texgyreadventorregular';
+}
+.img span {
+    color: #FF5454;
+}
+.img p{
+    color: #868686;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.slider_mini {
+   width: 100%;
+   overflow-x: auto;
+}
+.slider_mini .txt{
+    width: 285px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0.5rem;
+}
+@-webkit-keyframes slide-animation {
+	0% {opacity:0;}
+	2% {opacity:1;}
+	20% {left:0px; opacity:1;}
+	22.5% {opacity:0.6;}
+	25% {left:-600px; opacity:1;}
+	45% {left:-600px; opacity:1;}
+	47.5% {opacity:0.6;}
+	50% {left:-1200px; opacity:1;}
+	70% {left:-1200px; opacity:1;}
+	72.5% {opacity:0.6;}
+	75% {left:-1800px; opacity:1;}
+	95% {opacity:1;}
+	98% {left:-1800px; opacity:0;} 
+	100% {left:0px; opacity:0;}
+}
+
+#slider ul {
+	-webkit-animation: slide-animation 10s infinite;
+}
+#slider ul:hover {
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+@media only screen and (max-width: 496px) {
+    .links ul li a{
+        padding: 0px;
+        margin: auto;
+    }
+}
+
+/technology.html/
+.abt, .abot,.slid, .blog {
+    background: url('assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.technology {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.abt h1{
+    font-weight: 300;
+    font-size: 2rem;
+}
+.para{
+    font-size: 14px;
+    line-height: 1.8em;
+    color: #868686;
+}
+.abt .btn,.abot .btn, .slid .btn, .blog .btn{
+    border: 2px solid #FF5454;
+    color: black;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    width: auto;
+}
+.abt i{
+    color: black;
+    font-size: 4rem;
+    position: relative;
+    float: right;
+}
+.abt .far {
+    transform: rotateY(180deg);
+}
+.abt .btn:hover, .abot .btn:hover, .slid .btn:hover, .blog .btn:hover{
+    color: white;
+}
+.abt .example {
+    padding-left: 0px;
+}
+.abt .page-item a{
+    background-color: #3b3b3b;
+    color: #BDBDBD;
+    padding: 10px 16px;
+    border: 1px solid #2C2929;
+}
+.footer p a{
+    color: #FF5454;
+    text-transform: none;
+    text-decoration: none;
+}
+@media only screen and (max-width: 492px) {
+    .technology {
+        padding: 50px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+/about.html/
+.abot h2{
+    margin: 0 0 20px;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    color: #3b3b3b;
+    font-weight: 400;    
+}
+.abot .row,.slid .row {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.slid {
+    margin-top: 1px;
+}
+.blog {
+    cursor: pointer;
+}
+.blog .row {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.blog h2{
+    font-weight: 400;
+}
+.blog span:hover{
+    color: #FF5454;
+}
+.blog .follow_group {
+    display: flex;
+}
+.blog .follow_1,.follow_2,.follow_3,.follow_4 {
+    height: auto;
+    width: auto;
+    padding-bottom: 10px;
+    margin: 0px;
+    color: white;
+}
+.blog .follow_group p {
+    padding: 10px;
+    border-bottom: 1px solid #FFFFFF;
+}
+.blog .follow_group i {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.follow_1 {
+    background-color: #80BCEF;
+    transition: 0.5s all linear ease-in-out;
+}
+.blog .follow_1:hover {
+    background-color: #449EED;
+}
+.blog .follow_2{
+    background-color: blue;
+}
+.blog .follow_2:hover{
+    background-color: darkblue;
+}
+.blog .follow_3{
+    background-color: lightseagreen;
+}
+.blog .follow_3:hover{
+    background-color: darkseagreen;
+}
+.blog .follow_4{
+    background-color: lightcoral;
+}
+.blog .follow_4:hover{
+    background-color: darkred;
+}
+.blog .ads h4{
+    font-weight: 400;
+}
+.blog .block {
+    height: 125px;
+    margin-right: 25px;
+    max-width: 125px;
+}
+.blog .tags {
+    margin-top: 60px;
+}
+.blog .tags h4 {
+    font-weight: 400;
+}
+.blog .linking a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-color: #3b3b3b;
+    padding: 5px 10px;
+}
+.blog .linking a:hover {
+    background-color: #FF5454;
+    color: white;
+}
+.blog .linking .active {
+    background-color: #FF5454;
+    color: white;
+}
+.blog .news h4{
+    font-weight: 400;
+}
+
+/contact.html/
+.map {
+    background: url('assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.map .frst {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.contact {
+    border-top: 1px solid white;
+    background: url("C:\Users\99raj\OneDrive\Desktop\assets\bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact .row {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.contact h2 {
+    font-weight: 400;
+}
+.contact .info p{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.contact .info a{
+    text-decoration: none;
+    text-decoration: none;
+    color: #FF5454;
+}
+.contact .info a:hover{
+    color: black;
+}
+.contact .btn {
+    border: 2px solid #FF5454;
+    color: black;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    width: auto;
+}
+.contact .btn:hover{
+    color: white;
+}
